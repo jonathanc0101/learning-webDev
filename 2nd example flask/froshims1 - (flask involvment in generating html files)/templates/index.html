@@ -1,0 +1,23 @@
+{%extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Register for Frosh IMs</h1>
+    
+    <form action="/register" method="post">
+        <input autofocus type="text" name = "name" placeholder="Name">
+        
+        <select name="dorm" id="dorm">
+            <option value="" disabled selected>Dorm</option>
+            
+            {% for dormName in dorms %}
+                <option value={{dormName}}>{{dormName}}</option>
+            {% endfor %}
+
+            
+        </select>
+
+        <input type="submit" value="Register">
+    </form>
+
+{% endblock %}

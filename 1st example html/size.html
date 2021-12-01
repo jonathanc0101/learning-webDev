@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size</title>
+</head>
+<body>
+
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed dictum sapien. Nunc eu tempus orci. Vestibulum ultricies convallis urna vitae congue. Donec aliquet aliquet accumsan. Maecenas et laoreet tortor. Quisque mattis blandit felis quis vulputate. Morbi laoreet tortor nunc, ut sagittis nisi ullamcorper eget.</p>
+
+    <p>  Phasellus pellentesque, est ut malesuada mattis, justo dui ultrices felis, eu ultricies felis nisi in nulla. In hendrerit consequat ex, non ornare mauris tincidunt id. Proin tristique vehicula fringilla. Cras eget fermentum erat, eget viverra urna. Fusce nibh nibh, fringilla ullamcorper arcu ac, tempus mattis arcu. Nam pharetra faucibus dolor, a sodales arcu dictum eget. Suspendisse justo ex, suscipit eget sapien quis, ornare eleifend sem.</p>
+    
+    <select name="" id="select">
+        <option value="xx-large">xx-large</option>
+        <option value="x-large">x-large</option>
+        <option value="large">large</option>
+        <option value="small">small</option>
+        <option value="x-small">x-small</option>
+        <option value="xx-small">xx-small</option>
+        <option selected value ="initial">initial</option>
+    </select>
+
+    <script>
+        document.querySelector("#select").onchange = function() {
+            document.querySelector("body").style.fontSize = this.value
+        }
+    </script>
+    
+</body>
+</html>
